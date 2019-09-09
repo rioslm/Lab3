@@ -1,0 +1,30 @@
+﻿<!-- Leandra Rios Lab 3-->
+<!--On my honor, I pledge to uphold the JMU Honor System.-->
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:Button ID="SchoolButton" runat="server" Text="School" OnClick="schoolButton_click"  />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;
+        <asp:Button ID="StudentButton" runat="server" Text="Student" OnClick="studentButton_click" />
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;
+        <asp:Button ID="ActivityButton" runat="server" Text="Activity" OnClick="activityButton_click" />
+    </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
